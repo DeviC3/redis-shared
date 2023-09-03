@@ -4,7 +4,15 @@ Application used for create and manage redis instances by Unix users.
 
 ## Installation
 
-curl/wget
+Use wget or curl to run script directly.
+It is placing binary file directly under ```/usr/bin/``` directory and it should be ready to use.
+
+```bash
+wget -O - https://github.com/DeviC3/redis-shared/raw/main/install.sh | bash
+```
+```bash
+curl -s https://github.com/DeviC3/redis-shared/raw/main/install.sh | bash
+```
 
 ## Usage
 
@@ -34,6 +42,10 @@ Stop redis-server service
 Delete all files and running processes
 ```redis-shared --server flush```
 
+
+> Note: Script already tested under Ubunt 20+ environment
+> In next releases it will be tested under Red Hat and derivatives
+
 ## License
 
-GPL
+[GPLv3](https://github.com/DeviC3/redis-shared/blob/main/LICENSE)
