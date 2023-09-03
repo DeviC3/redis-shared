@@ -17,30 +17,33 @@ curl -s https://github.com/DeviC3/redis-shared/raw/main/install.sh | bash
 ## Usage
 
 ### As root user:
-Install mandatory files
+
 ```redis-shared --master install```
+Install mandatory files
 
-Copy config from default redis location (in case something wen wrong in /opt/redis location)
 ```redis-shared --master copyconfig```
+Copy config from default redis location (in case something wen wrong in /opt/redis location)
 
-Force to stop redis-server processes by Unix username
 ```redis-shared --master stop username```
+Force to stop redis-server processes by Unix username
 
-Delete processes and files from user directory
 ```redis-shared --master delete username```
+Delete processes and files from user directory
+
 
 ### As Unix user
-Create mandatory files and start redis server based on unix socket
+
 ```redis-shared --server install```
+Create mandatory files and start redis server based on unix socket
 
-Start redis-server service
 ```redis-shared --server start```
+Start redis-server service
 
-Stop redis-server service
 ```redis-shared --server stop```
+Stop redis-server service
 
-Delete all files and running processes
 ```redis-shared --server flush```
+Delete all files and running processes
 
 
 > Note: Script already tested under Ubunt 20+ environment
