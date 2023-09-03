@@ -12,8 +12,8 @@ sys.dont_write_bytecode = True
 parser = argparse.ArgumentParser()
 
 parser.add_argument('-v', action='store_true')
-parser.add_argument('--server', choices=['start', 'stop', 'flush', 'install', 'version'])
-parser.add_argument('--master', choices=['install', 'copyconfig', 'delete', 'stop', 'version'])
+parser.add_argument('--server', choices=['start', 'stop', 'flush', 'install'])
+parser.add_argument('--master', choices=['install', 'copyconfig', 'delete', 'stop'])
 parser.add_argument('username', nargs='?')
 
 args = parser.parse_args()
